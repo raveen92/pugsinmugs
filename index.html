@@ -140,29 +140,6 @@ h1 .accent { font-style: italic; background: var(--yellow); padding: 0 0.12em; b
 }
 .pet-perk:last-child { border-bottom: none; }
 .pet-perk svg { flex-shrink: 0; }
-.wa-btn {
-  position: fixed; bottom: 2rem; right: 2rem; z-index: 300;
-  width: 58px; height: 58px; border-radius: 50%;
-  background: #25D366;
-  display: flex; align-items: center; justify-content: center;
-  text-decoration: none;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.wa-btn:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
-.wa-btn svg { width: 30px; height: 30px; }
-.wa-tooltip {
-  position: fixed; bottom: 2.4rem; right: 5.5rem; z-index: 300;
-  background: var(--brown); color: var(--yellow);
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.8rem; font-weight: 600;
-  padding: 0.45rem 0.9rem; border-radius: 100px;
-  white-space: nowrap; pointer-events: none;
-  opacity: 0; transform: translateX(6px);
-  transition: opacity 0.2s, transform 0.2s;
-}
-.wa-btn:hover + .wa-tooltip, .wa-tooltip:hover { opacity: 1; transform: translateX(0); }
-
 /* STORY */
 #story { background: var(--salmon); padding: 6rem 3rem; }
 .story-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: center; }
@@ -266,11 +243,7 @@ h1 .accent { font-style: italic; background: var(--yellow); padding: 0 0.12em; b
 .contact-items { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem; }
 .ci { display: flex; align-items: flex-start; gap: 0.7rem; font-size: 0.9rem; color: rgba(62,41,19,0.65); font-weight: 300; }
 .ci svg { flex-shrink: 0; margin-top: 2px; }
-.map-box { border-radius: 20px; overflow: hidden; height: 380px; background: rgba(62,41,19,0.06); border: 1.5px dashed rgba(62,41,19,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; padding: 2rem; }
-.map-ph-title { font-family: 'Caveat', cursive; font-size: 1.3rem; font-weight: 600; color: rgba(62,41,19,0.4); }
-.map-ph-sub { font-size: 0.78rem; color: rgba(62,41,19,0.35); font-style: italic; }
-.map-link { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brown); text-decoration: none; border-bottom: 1px solid rgba(62,41,19,0.3); padding-bottom: 2px; transition: border-color 0.2s; }
-.map-link:hover { border-color: var(--brown); }
+.map-box { border-radius: 20px; overflow: hidden; }
 
 /* FOOTER */
 footer { background: var(--brown); padding: 3rem; text-align: center; color: rgba(250,247,240,0.4); font-size: 0.8rem; font-weight: 300; }
@@ -301,7 +274,7 @@ footer { background: var(--brown); padding: 3rem; text-align: center; color: rgb
   .story-img-wrap img { max-width: 200px !important; }
   .pug-carousel { aspect-ratio: 4/3; }
   .findus-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .map-box { display: none; }
+  .map-box { margin-top: 1rem; }
   #menu,#gallery,#story,#reviews,#findus,#pug-visitors { padding: 4rem 1.5rem; }
 }
 @media (min-width: 901px) and (max-width: 1100px) {
@@ -339,16 +312,16 @@ footer { background: var(--brown); padding: 3rem; text-align: center; color: rgb
       Open 7 Days · Somerville VIC
     </div>
     <h1 class="fu d1">
-      Your morning<br>deserves a <span class="accent">great brew</span>
+      Where every tail<br>gets a <span class="accent">warm welcome</span>
     </h1>
     <p class="hero-sub fu d2">
-      A cozy little cafe in Somerville where great coffee meets great people — and great pets are always welcome too. Brew with us, bring the family, bring the furry ones. ☕🐾
+      A cozy family cafe in Somerville with great coffee, tasty bites, a kids' play area — and yes, your four-legged mates are always welcome too. Free babyccinos for the littles, free pugccinos for the pets. ☕🐾
     </p>
     <div class="hero-actions fu d3">
       <a href="#menu" class="btn-primary">See Our Menu</a>
       <a href="#findus" class="btn-outline">Find Us</a>
     </div>
-    <p class="hero-hours fu d4">Open daily 6:30 AM – 2:30 PM · Pets welcome outdoors</p>
+    <p class="hero-hours fu d4">Open daily 6:30 AM – 2:30 PM · Pets & kids welcome</p>
   </div>
 
   <div class="hero-right">
@@ -461,8 +434,8 @@ footer { background: var(--brown); padding: 3rem; text-align: center; color: rgb
       <div class="story-body fu d2">
         <p>Pugs in Mugs started with a simple dream: a place where <strong>great coffee</strong> meets <strong>great people</strong>, every single morning. Nestled in Somerville, we've built more than a cafe — we've built a community.</p>
         <p>We're a proud family-owned business, and every decision — from the beans in your cup to the smile at the counter — comes straight from the heart. We partner with <strong>Frederick's Coffee</strong>, Melbourne's own specialty roaster, because we believe in local and we believe in the best.</p>
-        <p>And here's the thing — family means everyone. That includes the four-legged kind. Whether you've got a pug, a labrador, a rescue mutt, or something in between, they're part of the family here too. Pull up a chair out on our outdoor deck, and we'll have a water bowl ready and waiting. 🐾</p>
-        <p>So come in, kick off your day the Pugs way — and bring whoever makes your morning better.</p>
+        <p>Here at Pugs in Mugs, everyone is welcome — big, small, two-legged or four. Bring the kids and let them loose in our <strong>play area</strong> while you enjoy your coffee. We'll spoil the babies with a <strong>free babyccino</strong>, and every furry mate who visits gets a <strong>free pugccino</strong> on us. 🐾</p>
+        <p>Pull up a chair, stay a while, and kick off your day the Pugs way — bring whoever makes your morning better.</p>
       </div>
     </div>
     <div class="story-img-wrap fu d2">
@@ -545,48 +518,41 @@ footer { background: var(--brown); padding: 3rem; text-align: center; color: rgb
           <span>Somerville VIC 3912, Australia</span>
         </div>
         <div class="ci">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.87 19.79 19.79 0 01.07 4.24 2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#3E2913" stroke-width="1.8" fill="none"/></svg>
-          <span>Add your phone number here</span>
-        </div>
-        <div class="ci">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#3E2913" stroke-width="1.8" fill="none"/><path d="M3 9l9 6 9-6" stroke="#3E2913" stroke-width="1.8" fill="none"/></svg>
-          <span>Add your email address here</span>
+          <a href="mailto:hello@pugsinmugs.com.au" style="color:inherit;text-decoration:none;">hello@pugsinmugs.com.au</a>
         </div>
       </div>
+      <a href="https://goo.gl/maps/7NBayC3SseobFbi66" target="_blank" class="btn-primary fu d3" style="display:inline-flex;align-items:center;gap:0.5rem;margin-top:1.5rem;text-decoration:none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+        Get Directions
+      </a>
       <div class="pet-perks fu d3">
-        <p class="pet-perks-title">Pets welcome 🐾</p>
+        <p class="pet-perks-title">The whole family is welcome 🐾</p>
         <div class="pet-perk">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#3E2913" stroke-width="1.8" fill="none"/><path d="M9 22V12h6v10" stroke="#3E2913" stroke-width="1.8" stroke-linecap="round"/></svg>
-          <span>Outdoor seating for you and your pet</span>
+          <span>Outdoor seating — all pets welcome</span>
         </div>
         <div class="pet-perk">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" stroke="#3E2913" stroke-width="1.8" fill="none"/><path d="M8 13s1.5 2 4 2 4-2 4-2" stroke="#3E2913" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="10" r="1" fill="#3E2913"/><circle cx="15" cy="10" r="1" fill="#3E2913"/></svg>
-          <span>Fresh water bowls always ready</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#3E2913" stroke-width="1.8"/><path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="#3E2913" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="10" r="1" fill="#3E2913"/><circle cx="15" cy="10" r="1" fill="#3E2913"/></svg>
+          <span>Free pugccino for every furry visitor 🐶</span>
+        </div>
+        <div class="pet-perk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z" stroke="#3E2913" stroke-width="1.8" fill="none"/><path d="M8 10h8M8 14h5" stroke="#3E2913" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span>Free babyccino for babies & toddlers 🍼</span>
+        </div>
+        <div class="pet-perk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="#3E2913" stroke-width="1.8" fill="none"/><path d="M7 7V5a5 5 0 0110 0v2" stroke="#3E2913" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+          <span>Kids' play area onsite 🎠</span>
         </div>
         <div class="pet-perk">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="#3E2913" stroke-width="1.8" fill="none"/></svg>
-          <span>All pets welcome — pugs and beyond</span>
+          <span>Fresh water bowls always ready 💧</span>
         </div>
       </div>
     </div>
 
-    <!--
-    ══════════════════════════════════════════════════════════
-    GOOGLE MAPS EMBED — REPLACE THIS PLACEHOLDER
-    ══════════════════════════════════════════════════════════
-    1. Go to maps.google.com
-    2. Search for your exact address
-    3. Click Share → Embed a map → Copy HTML
-    4. Replace the map-box div below with the <iframe> code
-       Add style="width:100%;height:380px;border-radius:20px;border:0"
-       to the iframe element
-    ══════════════════════════════════════════════════════════
-    -->
     <div class="map-box fu d2">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" style="opacity:0.25"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#3E2913" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="#3E2913" stroke-width="1.8"/></svg>
-      <p class="map-ph-title">Google Map Embed</p>
-      <p class="map-ph-sub">Paste your Google Maps iframe code here to show your exact location.</p>
-      <a href="https://maps.google.com/?q=Somerville+VIC+3912+Australia" target="_blank" class="map-link">Open in Google Maps ↗</a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.382478443048!2d145.16734681196212!3d-38.224231171758206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad5e14f22621a51%3A0xb532de965a579498!2sPugs%20In%20Mugs!5e0!3m2!1sen!2slk!4v1774181350673!5m2!1sen!2slk" style="width:100%;height:380px;border:0;border-radius:20px;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
@@ -594,7 +560,7 @@ footer { background: var(--brown); padding: 3rem; text-align: center; color: rgb
 <!-- FOOTER -->
 <footer>
   <span class="ft-logo">Pugs in Mugs</span>
-  <span class="ft-tag">Great coffee, great people, all pets welcome — Somerville, VIC 🐾☕</span>
+  <span class="ft-tag">Great coffee · Kids play area · Pets & families always welcome — Somerville, VIC 🐾☕</span>
   <ul class="ft-nav">
     <li><a href="#menu">Menu</a></li>
     <li><a href="#gallery">Gallery</a></li>
@@ -604,14 +570,6 @@ footer { background: var(--brown); padding: 3rem; text-align: center; color: rgb
   </ul>
   <p>© 2025 Pugs in Mugs · Somerville VIC · Open 7 Days, 6:30 AM – 2:30 PM</p>
 </footer>
-
-<!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/+61473929606" target="_blank" class="wa-btn" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-  </svg>
-</a>
-<span class="wa-tooltip">Chat with us</span>
 
 <script>
 const obs = new IntersectionObserver(
